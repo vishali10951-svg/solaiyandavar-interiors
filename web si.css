@@ -1,0 +1,286 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffaf2;
+    color: #392315;
+}
+
+/* HEADER */
+header {
+    background: #3b2114;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #f5c47b;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5c47b;
+}
+
+/* HOME SECTION */
+.hero {
+    height: 550px;
+    background:
+    linear-gradient(rgba(25,15,8,0.65), rgba(25,15,8,0.65)),
+    url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1600');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #f6c77e;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.btn {
+    background: #c58a45;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8d5528;
+}
+
+/* COMMON HEADINGS */
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #754522;
+}
+
+/* ABOUT */
+.about {
+    padding: 65px 12%;
+    text-align: center;
+    background: #f5e6d1;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.about h3 {
+    margin-top: 25px;
+    color: #8b5429;
+}
+
+/* FURNITURE */
+.furniture {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.furniture-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #8b5429;
+    margin: 15px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+/* WOOD TYPES */
+.woods {
+    padding: 65px 8%;
+    text-align: center;
+    background: #eee0cd;
+}
+
+.wood-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.wood-list div {
+    background: #704326;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.wood-list div:hover {
+    background: #b17a43;
+    transform: scale(1.05);
+}
+
+/* SERVICES */
+.services {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.service-box {
+    background: #f3e5d2;
+    padding: 30px;
+    border-radius: 15px;
+    border-bottom: 5px solid #9a6336;
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+    color: #754522;
+}
+
+.service-box p {
+    line-height: 1.7;
+}
+
+/* CONTACT */
+.contact {
+    background: #ead5b9;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.contact-box {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-box h3 {
+    margin: 20px 0 10px;
+    color: #8b5429;
+}
+
+.contact-box p {
+    line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+    background: #3b2114;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 2;
+}
+
+footer h3 {
+    color: #f5c47b;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
